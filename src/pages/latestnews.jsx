@@ -16,7 +16,7 @@ const LatestNews = () => {
       <Marquee className="marquee" direction="left" speed={50}>
         <span className="text-capitalize">
           {/* "Stay Tuned For The New Price Of Phase-2 Project" */}
-          "DHS-Marasandra: Change of land use process has been completed."
+          "DHS-Marasandra: Change of land use process is completed."
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
           "DHS-Tapasihalli: DC conversion received."
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; "Bookings

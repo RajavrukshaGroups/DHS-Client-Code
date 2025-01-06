@@ -174,7 +174,7 @@ const MarasandraPage = () => {
           Will Be Executed As Per BMRDA/DPA Norms."
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; "Change
           Of Land Use Process Is
-          Ongoing."&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"Booking
+          Completed."&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"Booking
           are open for phace-2."
         </span>
         {/* <span>Change of land and conversion in progress.</span> */}
