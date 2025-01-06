@@ -1,0 +1,552 @@
+.tapasihalli-page {
+  padding: 0;
+}
+
+.banner-tapasihalli {
+  background-image: url("../../images/HR-10.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 150px 0;
+  position: relative;
+  /* height: 350px; */
+}
+
+.banner-content-tapasihalli {
+  /* background: rgba(0, 0, 0, 0.5); */
+  display: inline-block;
+  padding: 0px 0px 0px 120px;
+}
+
+.stamps {
+  height: 150px;
+  /* width:150px; */
+  float: right;
+  border-radius: 5px;
+  position: relative;
+  animation-name: pulse;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  margin-right: 2rem;
+  margin-top: 0rem;
+}
+
+.property-card {
+  margin: 20px auto;
+  /* Center the card horizontally */
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  /* Custom shadow effect */
+  max-width: 85%;
+  /* Limit card width */
+  border-radius: 10px;
+  /* Rounded corners */
+  background-color: #ffffff;
+  /* White background */
+}
+
+.project-intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #24457b;
+  margin-bottom: 10px;
+}
+
+.intro-subtitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #24457b;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.property-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.property-card li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.property-card li svg {
+  margin-right: 10px;
+}
+
+.booking-text {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: red;
+  text-align: center;
+}
+
+.booking-p {
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-title h2 {
+  font-weight: bold;
+  color: black;
+  /* margin-bottom: 10px; Add margin below the title */
+}
+
+.title-divider {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin: 5px auto;
+}
+
+.subintro p {
+  font-weight: bold;
+  font-family: emoji;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+  padding: 2px 60px 2px 60px;
+}
+
+.exclusive-text1 {
+  /* font-style: italic; */
+  margin-bottom: 15px;
+  /* Space below the exclusive text */
+  text-align: center;
+  color: black;
+}
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  /* Add margin space between title and icon list */
+}
+
+.icon-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #4a98ec;
+  /* Example of using Bootstrap's primary color */
+}
+
+.icon + span {
+  font-size: 18px;
+  color: #495057;
+  /* Adjust text color as needed */
+}
+
+.amenity-img {
+  display: block;
+  margin: auto;
+}
+
+.price-chart-section {
+  background-color: #f8f6fe;
+  padding: 40px;
+  border-radius: 8px;
+  /* margin-top: 40px; */
+  margin-bottom: 40px;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "emoji";
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid #24457b;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.price-table th {
+  background-color: #a3afc2 !important;
+  color: black;
+  font-weight: bold;
+  border-top: 2px solid #dee2e6 !important;
+  border-bottom: 2px solid #dee2e6 !important;
+}
+
+.price-table td {
+  background-color: rgb(255, 255, 255) !important;
+  border-bottom: 2px solid #dee2e6 !important;
+}
+
+/* src/pages/MarasandraPage/styles/MarasandraPage.css */
+
+.terms-conditions-section {
+  background-color: #f8f9fa;
+  /* Light background color */
+  padding: 40px 0;
+  /* Padding around the section */
+}
+
+.terms-conditions-section h2 {
+  text-align: center;
+  /* Center align the heading */
+  margin-bottom: 30px;
+  /* Space below the heading */
+  color: #333;
+  /* Dark text color */
+}
+
+.terms-listtt,
+.booking-details-listt {
+  list-style-type: disc;
+  padding: 0;
+  /* Remove default padding */
+  margin-left: 60px;
+  /* Add margin for indentation */
+}
+
+.terms-listtt li,
+.booking-details-listt li {
+  margin-bottom: 10px;
+  /* Space between each list item */
+  line-height: 1.5;
+  /* Line height for better readability */
+  color: #555;
+  /* Text color */
+  position: relative;
+  /* Position relative for absolute positioning */
+  padding-left: 0.8em;
+  text-align: justify;
+}
+
+.terms-listtt li::before,
+.booking-details-listt li::before {
+  color: black;
+  font-size: 0.8em;
+  margin-right: 0.5em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.blink {
+  animation: blinker 4s linear infinite;
+  color: red;
+  font-family: sans-serif;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.booking-text {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: red;
+  text-align: center;
+}
+
+.booking-p {
+  text-align: center;
+}
+
+/* .booking-details-list {
+    list-style-type: disc; 
+    margin: 20px; 
+    padding-left: 20px;
+}
+
+.booking-details-list li {
+    margin-bottom: 10px; 
+} */
+
+@media (max-width: 768px) {
+  .banner-tapasihalli {
+    background-image: url("../../images/HR-10.webp");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    /* height: 350px; */
+  }
+
+  .terms-listtt {
+    font-size: 1em;
+    /* Reduce font size on smaller screens */
+  }
+
+  .terms-listtt,
+  .booking-details-listt {
+    list-style-type: disc;
+    padding: 1px;
+    margin-left: 9px;
+  }
+
+  .subintro p {
+    font-weight: bold;
+    font-family: emoji;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 18px;
+    padding: 2px 60px 2px 60px;
+  }
+}
+
+.bank-details-section {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  margin-top: -3rem;
+}
+
+.bank-details {
+  margin-bottom: 40px;
+}
+
+.bank-details h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* .bank-details ul {
+    list-style: none;
+    padding: 0;
+} */
+
+/* .bank-details ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+} */
+
+/* .bank-details ul li:before {
+    content: "\2022"; 
+    color: #24457b; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+} */
+
+.card-titles {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .bank-details ul li {
+    font-size: 16px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.svgs {
+  font-family: "Russo One", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.svgs text {
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #365fa0;
+  font-size: 100px;
+}
+
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+
+  70% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+  }
+
+  80% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-width: 3;
+  }
+
+  100% {
+    fill: rgba(72, 138, 204, 1);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+.wrapper {
+  background-color: #ffffff;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.5;
+    transform-origin: 50% 50%;
+    transform: rotate(-2deg) scale(5);
+    transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(-15deg) scale(1);
+  }
+}
+
+.seals {
+  height: 130px;
+    width: 130px;
+  /* width: 100%; */
+}
+
+.price-seals {
+  height: 130px;
+  width: 130px;
+}
+
+.stamps {
+  height: 150px;
+  /* width:150px; */
+  float: right;
+  border-radius: 5px;
+  position: relative;
+  animation-name: pulse;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  margin-right: 2rem;
+  margin-top: 4rem;
+}
+
+.bank-details-table {
+  width: 66%;
+  margin-left: 14rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .bank-details-table {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .banner-content-tapasihalli {
+    padding: 0px 0px 0px 1px;
+    margin-top: -4rem;
+  }
+
+  .property-card {
+    padding: 15px;
+    max-width: 100%;
+    /* Full width for mobile view */
+  }
+
+  .project-title {
+    font-size: 2em;
+  }
+
+  .intro-subtitle {
+    font-size: 1.2em;
+  }
+
+  .card-title h2 {
+    font-size: 1.5em;
+  }
+
+  .exclusive-text {
+    font-size: 1em;
+  }
+
+  .icon-list li {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .svgs text {
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #365fa0;
+    font-size: 50px;
+  }
+
+  .seals {
+    height: 70px;
+    width: 70px;
+  }
+
+  .stamps {
+    height: 70px;
+    width: 70px;
+    float: right;
+    border-radius: 5px;
+    position: relative;
+    animation-name: pulse;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    margin-right: 10rem;
+    margin-top: -1rem;
+  }
+
+  .subintro p {
+    font-weight: bold;
+    font-family: emoji;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 18px;
+    padding: 2px 2px 2px 2px;
+  }
+}
+
+td {
+  font-family: emoji;
+}
+
+strong {
+  font-family: emoji;
+}

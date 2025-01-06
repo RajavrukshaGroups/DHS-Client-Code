@@ -1,0 +1,242 @@
+.online-application {
+  padding: 0;
+}
+
+.banner {
+  background-image: url('../../images/HR-4.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+  /* height: 500px; */
+}
+
+.banner h1,
+.banner h3 {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+
+.banner h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.banner h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.banner-content {
+  /* background: rgba(0, 0, 0, 0.5); */
+  display: inline-block;
+  /* padding: 81px 0px 0px 120px; */
+
+}
+
+
+.captchaBox {
+  /* border: 1px solid rgb(55, 55, 121); */
+  border-radius: 0px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  width: 22%;
+
+}
+
+.captcha-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  height: 60px;
+  border: 2px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.captcha-text {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #333;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.reload-btn {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s;
+}
+
+.reload-btn svg {
+  color: black;
+  /* Icon color */
+  font-size: 24px;
+  /* Adjust icon size */
+}
+
+.reload-btn:hover svg {
+  color: #0056b3;
+  /* Icon color on hover */
+}
+
+.submitBtn {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: rgba(130, 82, 138, 100);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.inputBox {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width:767px) {
+  .banner-content {
+    padding: 0px 0px 0px 29px;
+
+  }
+}
+
+.property-card {
+  margin: 20px auto;
+  /* Center the card horizontally */
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+  /* Custom shadow effect */
+  max-width: 85%;
+  /* Limit card width */
+}
+
+.application {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.application h2 {
+  color: #24457B;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  margin-left: 10px;
+  /* Add margin to separate icon from text */
+}
+
+.title-icon {
+  margin-right: 0.5rem;
+  color: #24457B;
+  margin-bottom: 10px;
+}
+
+.form-fields {
+  color: #2d2929;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: "Rubik", sans-serif;
+  margin-top: 10px;
+}
+
+.form-label {
+  margin-bottom: .5rem;
+  margin-top: 20px;
+}
+
+.dropdown-input {
+  position: relative;
+}
+
+.dropdown-symbol {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.dropdown-symbol span {
+  font-size: 14px;
+  color: #495057;
+}
+
+/* Styling for disabled form fields */
+.form-control:disabled {
+  background-color: #e9ecef;
+  /* opacity: 1; Ensure opacity is set to 1 for accessibility */
+}
+
+
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #24457B;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0a0a0a;
+  transform: scale(1.1);
+}
+
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loading-spinner {
+  border: 8px solid #f3f3f3;
+  /* Light grey */
+  border-top: 8px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

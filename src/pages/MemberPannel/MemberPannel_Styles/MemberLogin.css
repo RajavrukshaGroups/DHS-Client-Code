@@ -1,0 +1,86 @@
+.banner-member {
+  background-image: url('../../../images/page-title-2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+.banner-content-member {
+  /* background: rgba(0, 0, 0, 0.5); */
+  display: inline-block;
+  padding: 20px;
+}
+
+
+.inner-box-member {
+  position: relative;
+  display: block;
+  background-color: #ffffff;
+  padding: 36px 40px 40px 40px;
+  box-shadow: 0 10px 30px 0px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+}
+
+
+/* src/components/MemberLoginForm.css */
+.tabs-content {
+  width: 50%;
+  position: relative;
+  left: 28%;
+}
+
+.tab {
+  padding: 20px;
+}
+
+.inner-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  /* width: 100%; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-btn {
+  text-align: center;
+}
+
+.theme-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.theme-btn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width:767px) {
+  .tabs-content {
+    width: 100%;
+    position: relative;
+    left: 0%;
+  }
+
+}

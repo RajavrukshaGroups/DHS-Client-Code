@@ -1,0 +1,78 @@
+.header-top {
+    position: relative;
+    background: linear-gradient(105deg, #6e99e6, #093c94);
+    height: 58px;
+}
+
+.pull-rights {
+    float: right;
+    margin-top: 1rem;
+}
+
+.header-top .info li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    color: white;
+    padding-left: 22px;
+    margin-top: 17px;
+}
+
+.header-top .sign-box a {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    color: white !important; /* Force the color to white */
+}
+
+.header-top .sign-box {
+    position: relative;
+    float: left;
+    right: 7%;
+    padding-left: -10px;
+}
+
+.header-top .info li .fa {
+    color: rgb(197, 34, 34) !important; /* Ensure FontAwesome icons are white */
+}
+
+/* Increase specificity */
+.header-top .info li .fa-map-marker-alt,
+.header-top .info li .fa-clock,
+.header-top .info li .fa-phone,
+.header-top .sign-box a .fa-user,
+.header-top .sign-box a .fa-desktop {
+    color: white !important; /* Force the color to white */
+}
+
+/* General styles for .left-column */
+.left-column {
+    display: block; /* Ensure it's displayed by default */
+}
+
+@media only screen and (max-width: 767px) {
+    .header-top {
+        /* height: 102px; */
+    }
+
+    .pull-rights {
+        float: left;
+        /* margin-top: 2rem; */
+        margin-left: 4rem;
+    }
+    .left-column {
+        display: none; /* Hide .left-column on mobile */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 912px) {
+    .header-top {
+        height: 95px;
+    }
+
+    .pull-rights {
+        float: left;
+        margin-left: 3rem;
+    }
+}

@@ -1,0 +1,126 @@
+.header-top {
+    position: relative;
+    background: linear-gradient(105deg, #6e99e6, #093c94);
+    height: 58px;
+}
+
+.pull-rights-login {
+    float: right;
+    margin-top: 1rem;
+}
+
+.header-top .info li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    color: white;
+    padding-left: 22px;
+    margin-top: 17px;
+}
+
+.header-top .sign-box1 a {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    color: white !important;
+    /* Force the color to white */
+}
+
+.header-top .sign-box2 a {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    color: white !important;
+    /* Force the color to white */
+}
+
+.header-top .sign-box1 {
+    position: relative;
+    float: left;
+    right: 7%;
+    padding-left: -10px;
+    margin-top: 0px;
+    border-right: 1px solid grey;
+    padding-right: 15px;
+}
+
+.header-top .sign-box2 {
+    position: relative;
+    float: left;
+    right: 7%;
+    padding-left: -10px;
+    margin-top: 0px;
+    /* border-right: 1px solid grey; */
+    padding-right: 15px;
+}
+
+.header-top .info li .fa {
+    color: rgb(197, 34, 34) !important;
+    /* Ensure FontAwesome icons are white */
+}
+
+/* Increase specificity */
+.header-top .info li .fa-map-marker-alt,
+.header-top .info li .fa-clock,
+.header-top .info li .fa-phone,
+.header-top .sign-box1 a .sign-box2 a .fa-user,
+.header-top .sign-box1 a .sign-box2 a .fa-desktop {
+    color: white !important;
+    /* Force the color to white */
+}
+
+/* General styles for .left-column */
+.left-column {
+    display: block;
+    /* Ensure it's displayed by default */
+}
+
+@media only screen and (max-width: 767px) {
+    .header-top {
+        /* height: 102px; */
+    }
+
+    .pull-rights-login {
+        float: left;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding: 13px 0px 7px 1px;
+    }
+
+    .left-column {
+        display: none;
+        /* Hide .left-column on mobile */
+    }
+
+    .header-top .sign-box1 {
+        position: relative;
+        float: left;
+        right: 4%;
+        padding-left: -10px;
+        margin-top: -1rem;
+        border-right: 1px solid grey;
+        /* padding-right: 15px; */
+    }
+
+    .header-top .sign-box2 {
+        position: relative;
+        float: left;
+        right: 6%;
+        padding-left: -10px;
+        margin-top: -1rem;
+        /* border-right: 1px solid grey; */
+        /* padding-right: 15px; */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 912px) {
+    .header-top {
+        height: 95px;
+    }
+
+    .pull-rights-login {
+        float: left;
+        margin-left: 3rem;
+    }
+}

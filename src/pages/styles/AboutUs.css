@@ -1,0 +1,264 @@
+* {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+/* Banner */
+.banner-style-two {
+    position: relative;
+}
+
+.banner-logo {
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
+}
+
+.banner-carousel .carousel-item {
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+}
+
+.res-about {
+    padding: 10px 0;
+}
+
+.banner-carousel .carousel-item-next,
+.banner-carousel .carousel-item-prev,
+.banner-carousel .carousel-item.active {
+    display: block;
+    opacity: 1;
+}
+
+.banner-carousel .carousel-item-next.carousel-item-left,
+.banner-carousel .carousel-item-prev.carousel-item-right,
+.banner-carousel .carousel-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner-carousel .image-layer {
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-box {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content-box .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.content-box .regNo {
+    font-size: 2rem;
+    color: white;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 5px;
+}
+
+/* Video */
+
+.content_block_2 .content-box {
+    position: relative;
+    display: block;
+}
+
+.sec-title h2 {
+    text-align: left;
+    font-size: 28px;
+}
+
+.texts {
+    text-align: justify;
+    margin-left: 3rem;
+
+}
+
+.aboutvideo {
+    height: 410px;
+    width: 450px;
+    margin-top: -8rem;
+    margin-left: 3rem;
+}
+
+.banner-about {
+    background-image: url('../../images/HR-10.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 165px 0;
+    position: relative;
+    /* height: 300px; */
+
+}
+
+.banner-content-about {
+    display: inline-block;
+    padding: 16px 0px 0px 83px;
+
+}
+
+.vission {
+    padding: 96px 55px 65px 55px;
+}
+
+@media only screen and (max-width:767px) {
+    .banner-about {
+        background-image: url('../../images/HR-10.webp');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 45px 0;
+        position: relative;
+        /* height: 300px; */
+
+    }
+
+    .banner-content-about {
+        display: inline-block;
+        padding: 0px 0px 0px 0px;
+
+    }
+
+    /* .aboutvideo{
+        width: 300px;
+        margin-left: 2rem;
+      } */
+
+    .aboutvideo {
+        width: 300px;
+        margin-left: 2rem;
+        height: auto;
+        /* margin-top: -31px; */
+        margin-bottom: 37px;
+        margin-top: 2px;
+    }
+
+    .res-about {
+        padding: 0px 0;
+    }
+
+    .sec-title h2 {
+        text-align: center;
+        /* margin-top: 2rem; */
+    }
+
+    .texts {
+        margin-left: 4rem;
+
+    }
+
+    .vission {
+        padding: 35px 25px 16px;
+    }
+
+    .inner-box1 {
+        padding: 35px 25px 16px;
+    }
+}
+
+/* vission and mission */
+
+/* Feature Block Two Styles */
+.feature-block-two {
+    position: relative;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.feature-block-two .inner-box {
+    position: relative;
+    display: block;
+    background-color: white;
+    padding: 96px 55px 65px 55px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px 0px rgb(0 0 0 / 10%);
+}
+
+.feature-block-two .inner-box .icon-box {
+    position: relative;
+    display: inline-block;
+    font-size: 52px;
+    line-height: 55px;
+    margin-bottom: 25px;
+    color: #f2b241;
+    z-index: 1;
+}
+
+.feature-block-two:hover .inner-box {
+    transform: translateX(10%);
+}
+
+.feature-block-two.hovered .inner-box {
+    transform: translateX(3%);
+}
+
+.sec-titles {
+    margin-bottom: 2rem;
+}
+
+.sec-titles h2 {
+    text-align: center;
+    color: #24457b;
+    font-weight: bold;
+}
+
+.sec-titles h5 {
+    text-align: center;
+    color: #24457b;
+    font-weight: bold;
+    margin-top: 100px;
+    padding: 10px;
+
+}
+
+.inner-box1 {
+    box-shadow: 0 10px 30px 0px rgb(0 0 0 / 10%);
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    /* padding:96px 55px 65px 55px; */
+}
+
+
+@media only screen and (max-width:768px) {
+    .inner-box1 {
+        box-shadow: 0 10px 30px 0px rgb(0 0 0 / 10%);
+        position: relative;
+        display: block;
+        overflow: hidden;
+        background-color: #ffffff;
+        border-radius: 10px;
+        transition: all 500ms ease;
+        margin-top: 2rem;
+    }
+
+    .sec-titles h5 {
+        text-align: center;
+        color: #24457b;
+        font-weight: bold;
+        padding: 10px;
+    }
+}

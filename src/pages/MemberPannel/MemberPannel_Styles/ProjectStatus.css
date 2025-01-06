@@ -1,0 +1,80 @@
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  } */
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.psback-icon {
+  font-size: 50px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 24px;
+}
+
+.psback-icon:hover {
+  color: #45a049;
+}
+
+.pstitle {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.psseparator {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin: 5px auto;
+}
+
+.projectstatus-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 85px;
+  margin-top: 25px;
+}
+
+.projectstatus-tableth,
+.projectstatus-tabletd {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.projectstatus-tableth {
+  background-color: #20283E;
+  color: white;
+  font-weight: bold;
+  /* border: none; */
+  border: 1px solid whitesmoke;
+}
+
+.projectstatus-tabletr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.no-records {
+  text-align: center;
+  padding: 12px;
+  /* font-style: italic; */
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .projectstatus-table {
+    min-width: 600px;
+    /* Ensures the table does not shrink too much */
+  }
+}

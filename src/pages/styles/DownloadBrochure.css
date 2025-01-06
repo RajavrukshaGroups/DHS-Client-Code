@@ -1,0 +1,132 @@
+.download-brochure-card {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.download-brochure-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+
+.download-brochure-form .form-group {
+  width: 100%;
+}
+
+.download-brochure-form .form-label {
+  font-weight: 500;
+  font-size: 1em;
+  color: #555;
+  text-align: left;
+}
+
+.download-brochure-form .form-control {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.download-brochure-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.download-brochure-form .form-check {
+  text-align: left;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.download-button {
+  min-width: 150px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .download-brochure-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .download-brochure-form .form-label {
+    font-size: 0.9em;
+  }
+
+  .download-button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .download-brochure-card {
+    width: 95%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .download-brochure-form .form-label {
+    font-size: 0.8em;
+  }
+
+  .download-button {
+    width: 100%;
+    padding: 8px
+  }
+}

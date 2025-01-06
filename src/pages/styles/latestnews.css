@@ -1,0 +1,176 @@
+.marasandra-page {
+    padding: 0;
+}
+
+.banner-latest {
+    background-image: url('../../images/HR-4.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.latest-badge {
+    /* position: absolute; */
+    /* top: 1px; */
+    right: 25rem;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    animation: blink 4s infinite;
+    margin-left: 8px;
+    /* Adjust space between text and badge */
+    display: inline-block;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .latest-badge {
+        margin-left: 8px;
+        /* Adjust margin for this screen width if needed */
+    }
+}
+
+@media (min-width: 1440px) {
+    .latest-badge {
+        margin-left: 12px;
+        /* Adjust margin for larger screens if needed */
+    }
+}
+
+.ct {
+    text-align: justify;
+}
+
+
+.custom-bullet {
+    position: relative;
+    padding-left: 20px;
+    /* Adjust based on the bullet size */
+}
+
+.custom-bullet::before {
+    content: '●';
+    /* Or use '\2022' for the bullet character */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    /* Adjust to desired size */
+    color: black;
+    /* Adjust to desired color */
+}
+
+
+.banner-content3 {
+    /* background: rgba(0, 0, 0, 0.5); */
+    display: inline-block;
+    padding: 0px 0px 0px 0px;
+}
+
+.property-card-latest {
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    max-width: 85%;
+}
+
+@media only screen and (max-width:767px) {
+
+    .banner-content3 {
+        padding: 0px 0px 0px 29px;
+        margin-top: -4rem;
+
+    }
+
+    .ct {
+        text-align: center;
+    }
+
+    .property-card-latest {
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+        max-width: 100%;
+    }
+}
+
+.marquee {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+
+
+.property-card-latest ul {
+    list-style: none;
+    padding: 0;
+}
+
+.property-card-latest li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.property-card-latest li svg {
+    margin-right: 10px;
+}
+
+.booking-text {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: red;
+    text-align: center;
+}
+
+.booking-p {
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-title h2 {
+    font-weight: bold;
+    color: black;
+    /* margin-bottom: 10px; Add margin below the title */
+}
+
+.title-divider {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 5px auto;
+    /* Center the divider */
+}
+
+.exclusive-text {
+    font-style: italic;
+    margin-bottom: 15px;
+    /* Space below the exclusive text */
+}
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

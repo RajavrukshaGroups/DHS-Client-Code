@@ -1,0 +1,295 @@
+/* General Styles */
+* {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  /* color: #333; */
+  box-sizing: border-box;
+  transition: all 0.5s;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.auto-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.banner-section {
+  padding: 0px 0;
+}
+
+.sec-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sec-title h5 {
+  color: #007bff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.sec-title h2 {
+  color: #24457b;
+  font-size: 36px;
+  text-align: center;
+}
+
+.theme-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.theme-btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.image-box {
+  position: relative;
+}
+
+.seal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.mostvideo {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.btn-one {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Ongoing Projects Section */
+.feature-style-two {
+  padding-top: 0px 0;
+}
+
+.feature-block-one .inner-box {
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.feature-block-one .image-box .image {
+  position: relative;
+}
+
+.feature-block-one .image-box .image img.project-image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.feature-block-one .image-box .image img.project-seal {
+  /* height: 100px; */
+  /* width: 100px; */
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.feature-block-one .lower-content .author-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-block-one .lower-content .author-info .author-thumb img.project-logo {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.feature-block-one .lower-content .author-info .author-title {
+  margin-top: 10px;
+}
+
+.feature-block-one .lower-content .author-info .author-title h6.project-title {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.feature-block-one .lower-content .author-info .buy-btn {
+  margin-top: 10px;
+}
+
+.feature-block-one .lower-content .author-info .buy-btn a.price-tag {
+  color: white;
+  font-size: 16px;
+  background-color: #007bff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* Video Section */
+.video-section {
+  background-color: #f9f9f9;
+  padding: 0px 0;
+}
+
+.video-section .row {
+  display: flex;
+  align-items: center;
+}
+
+.video-section .sec-title {
+  margin-bottom: 30px;
+}
+
+/* 
+.video-section .sec-title h2 {
+    font-size: 36px;
+    color: #333;
+} */
+
+.video-section .sec-title p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.video-section .video-box {
+  margin-top: 30px;
+}
+
+.video-section .mostvideo {
+  width: 89%;
+  height: 250px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.features-style-two {
+  padding-top: 88px;
+}
+
+.feature1-style-two {
+  padding-top: 4px;
+}
+
+.btn-boxs {
+  text-align: center;
+  margin-top: 20px;
+  padding: 2px 2px 19px 2px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sec-title h2 {
+    color: #24457b;
+    font-size: 24px;
+  }
+
+  .feature-block-one .inner-box {
+    margin-bottom: 30px;
+  }
+
+  .feature-block-one .lower-content .author-info {
+    align-items: center;
+  }
+
+  .feature-block-one .lower-content .author-info .author-title h6.project-title,
+  .feature-block-one .lower-content .author-info .buy-btn a.price-tag {
+    /* margin: 10px 0px 0px 32px; */
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .video-section .row {
+    flex-direction: column;
+  }
+
+  .video-section .sec-title,
+  .video-section .video-box {
+    text-align: center;
+  }
+
+  .features-style-two {
+    padding-top: 3px;
+  }
+
+  .feature1-style-two {
+    padding-top: 0px;
+    margin-top: -4rem;
+  }
+
+  .btn-boxs {
+    text-align: center;
+    margin-top: -2rem;
+    /* padding: 2px 2px 19px 2px; */
+  }
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: inherit;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  top: 140%;
+}
+
+.squarefit {
+  color: red;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@keyframes blinkingText {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.limited-booking {
+  color: red;
+
+  animation: blink 4s infinite;
+}
+
+.welcome {
+  line-height: 2rem;
+}

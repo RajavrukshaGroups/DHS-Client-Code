@@ -1,0 +1,191 @@
+* {
+  font-family: "Rubik", sans-serif;
+  font-size: 17px;
+}
+
+.navbar-custom {
+  background-color: #f8f9fa; /* Light grey background */
+  height: auto; /* Adjust the height according to the content */
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: center;
+  transition: all 0.3s ease; /* Add transition for smooth resizing */
+}
+
+.navbar-logo {
+  height: 125px; /* Adjust this value as needed */
+  margin-right: 20px; /* Space between logo and nav items */
+}
+
+.main-logo {
+  display: inline;
+}
+
+.small-logo {
+  display: none;
+}
+
+.navbar-small .main-logo {
+  display: none;
+}
+
+.navbar-small .small-logo {
+  display: inline;
+}
+
+.navbar-small .navbar-logo {
+  height: 50px; /* Smaller logo height */
+}
+
+.nav-item-custom {
+  margin-right: 2rem; /* Add some margin between nav items */
+  color: #24457b;
+}
+
+.nav-link-custom {
+  color: #24457b;
+  font-weight: bold;
+  font-size: 17px;
+  position: relative; /* Needed for the notification badge */
+}
+
+.nav-item-custom:active {
+  background-color: white;
+}
+
+/* Custom styles for dropdown items */
+.nav-dropdown-custom .dropdown-menu {
+  background-color: #f8f9fa; /* Same background color as navbar */
+  display: none; /* Initially hide the dropdown menu */
+  position: absolute;
+}
+
+.nav-dropdown-custom .dropdown-toggle {
+  color: #24457b; /* Color for dropdown toggle */
+  font-weight: bold; /* Make dropdown toggle text bold */
+  font-size: 17px;
+}
+
+.nav-dropdown-custom .dropdown-item {
+  color: #24457b; /* Blue text color */
+}
+
+.nav-dropdown-custom .dropdown-item:hover {
+  color: #0056b3; /* Darker blue on hover */
+  background-color: #e9ecef; /* Light grey background on hover */
+}
+
+/* Hover effect for dropdowns */
+.nav-item-custom:hover .dropdown-menu {
+  display: block; /* Show the dropdown menu on hover */
+  margin-top: 0;
+}
+
+/* Ensure dropdown menu is visible on hover */
+.nav-dropdown-custom:hover .dropdown-menu {
+  display: block;
+}
+
+/* Notification badge styles */
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -18px;
+  background-color: red;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-size: 12px;
+  animation: blink 4s infinite;
+}
+
+/* Mobile menu */
+@media only screen and (max-width: 768px) {
+  .navbar-custom {
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+  }
+
+  #basic-navbar-nav {
+    z-index: 999;
+    background-color: #061a3a;
+    height: auto;
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .nav-link-custom {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0; /* Add margin for better spacing */
+    padding: 0px;
+  }
+
+  .nav-item-custom {
+    margin-right: 0; /* Remove right margin for mobile view */
+  }
+
+  .nav-dropdown-custom .dropdown-toggle {
+    color: white; /* Color for dropdown toggle in mobile view */
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .nav-dropdown-custom .dropdown-item {
+    color: black;
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .nav-dropdown-custom .dropdown-item:hover {
+    color: #0056b3; /* Darker blue on hover */
+    background-color: #e9ecef; /* Light grey background on hover */
+  }
+
+  .navbar-logo {
+    height: 70px; /* Adjust this value as needed */
+    margin-right: 20px; /* Space between logo and nav items */
+  }
+
+  /* Ensure dropdown menu is not overlapping */
+  .nav-dropdown-custom .dropdown-menu {
+    position: static; /* Set position to static for proper layout */
+  }
+
+  /* Ensure dropdown menu is visible when expanded */
+  .navbar-collapse.collapsing,
+  .navbar-collapse.show {
+    display: block !important;
+  }
+
+  .nav-link-custom:hover,
+  .nav-link-custom:focus,
+  .nav-link-custom:active {
+    color: white !important; /* Maintain the same color on hover, focus, and active */
+  }
+
+  /* Notification badge styles */
+  .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: 200px;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    animation: blink 4s infinite;
+  }
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}

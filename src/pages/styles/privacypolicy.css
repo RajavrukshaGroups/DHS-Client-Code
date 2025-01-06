@@ -1,0 +1,180 @@
+.privacypolicy {
+    padding: 0;
+}
+
+.banner-privacy {
+    background-image: url('../../images/standard-quality-control-concept-m.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    font-family: emoji;
+    font-weight: bold;
+}
+
+.banner-content3 {
+    /* background: rgba(0, 0, 0, 0.5); */
+    display: inline-block;
+    padding: 0px 0px 0px 0px;
+}
+
+.property-card-latest {
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    max-width: 85%;
+}
+
+@media only screen and (max-width:767px) {
+    .banner-content3 {
+        padding: 0px 0px 0px 29px;
+        margin-top: -4rem;
+
+    }
+
+    .property-card-latest {
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+        max-width: 100%;
+    }
+}
+
+.marquee {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+
+
+.property-card-latest ul {
+    list-style: none;
+    padding: 0;
+}
+
+.property-card-latest li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.property-card-latest li svg {
+    margin-right: 10px;
+}
+
+.booking-text {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: red;
+    text-align: center;
+}
+
+.booking-p {
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-title h2 {
+    font-weight: bold;
+    color: black;
+    /* margin-bottom: 10px; Add margin below the title */
+}
+
+.title-divider {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 5px auto;
+    /* Center the divider */
+}
+
+.exclusive-text {
+    font-style: italic;
+    margin-bottom: 15px;
+    /* Space below the exclusive text */
+}
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* privacy policy */
+.privacy-policy-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    font-family: emoji;
+
+}
+
+.autoc {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec-title {
+    margin-bottom: 30px;
+}
+
+.sec-titless h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.privacy-policy-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.privacy-policy-header {
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.privacy-policy-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: math;
+    font-size: 14px;
+}
+
+.privacy-policy-list li {
+    margin-bottom: 5px;
+    list-style: disc;
+}
+
+.privacy-policy-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

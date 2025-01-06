@@ -1,0 +1,737 @@
+*{
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+/* Banner */
+.banner-style-two {
+    position: relative;
+}
+
+.banner-logo {
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
+}
+.banner-carousel .carousel-item {
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner-carousel .carousel-item-next,
+.banner-carousel .carousel-item-prev,
+.banner-carousel .carousel-item.active {
+    display: block;
+    opacity: 1;
+}
+
+.banner-carousel .carousel-item-next.carousel-item-left,
+.banner-carousel .carousel-item-prev.carousel-item-right,
+.banner-carousel .carousel-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+.content-box {
+        /* text-align: center; */
+        margin-bottom: 7rem;
+    
+}
+
+.content-box .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.content-box .regNo {
+    font-size: 1.5rem;
+    color: white;
+
+}
+.carousel-indicators [data-bs-target] {
+    width: 5px;
+}
+
+/* about us */
+
+.feature-style-two {
+    padding-top: 0px;
+}
+
+.sec-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sec-title h5 {
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.sec-title h2 {
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.row{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.container .row {
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.theme-btn.btn-one {
+    background-color:rgb(36, 69, 123);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.theme-btn.btn-one:hover {
+    background-color: #333;
+}
+/* Button(Read More) */
+.btn {
+    --color: black;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+
+   /* On Going Project */
+
+   #textBetweenButtons {
+    margin: 5px;
+    display: block;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.inner-box {
+    box-shadow: 0 10px 30px 0px rgb(0 0 0 / 10%);
+        position: relative;
+        display: block;
+        overflow: hidden;
+        background-color: #ffffff;
+        border-radius: 10px;
+        transition: all 500ms ease;
+}
+
+
+.feature-block-one .inner-box .lower-content .author-info {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* box-shadow: 0 10px 30px 0px rgb(0 0 0 / 10%); */
+    padding: 15px 15px;
+    margin-top: -35px;
+    margin-bottom: 28px;
+    min-height: 70px;
+    z-index: 1;
+}
+
+
+
+.theme-btn.btn-two {
+    color: #29157e;
+    border: 1px solid #29157e;
+}
+
+.theme-btn {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 17px;
+    line-height: 25px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 15.5px 34px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.author-info .author {
+    position: relative;
+    padding: 7px 0px 7px 0px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.author-thumb {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.buy-btn {
+    margin-top: 2rem;}
+
+.buy-btn a {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #24457b;
+    padding: 0px 14px;
+}
+
+.pull-right {
+    float: right;
+    margin-top: 2rem;
+}
+
+.feature-block-one .inner-box .image-box .image:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.feature-style-two .feature-block-one .inner-box {
+    box-shadow: 0 10px 30px 0px rgb(0 0 0 / 10%);
+}
+
+.feature-block-one .inner-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+.btn-box {
+    text-align: center;
+    padding: 2px 2px 19px 2px;
+}
+
+/* Most Popular */
+p{
+    position: relative;
+    color: black;
+    margin: 0px;
+    transition: all 500ms ease;
+
+}
+
+.content_block_2 .content-box .place-list li a h5 {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    display: inline-block;
+}
+
+.content_block_2 .content-box .sec-title {
+    margin-bottom: 40px;
+}
+
+.content_block_2 .content-box .place-list {
+    position: relative;
+    display: block;
+    margin-bottom: 46px;
+}
+
+
+
+.mostpopular{
+
+    margin-bottom: 3rem;
+
+}
+
+.mostvideo{
+width:440px;
+height:300px;
+
+}
+
+.banner-carousel .image-layer {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+
+    .pull-right {
+        float: right;
+        margin-top: 1rem;
+        padding: 1px 8px 2px 2px;
+    }
+
+    
+    .banner-carousel .content-box h2 {
+        font-size: 28px;
+        /* line-height: 45px; */
+    }
+
+    .content-box {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .mostvideo{
+        height:300px;
+        width: 400px;
+    }
+    .banner-carousel .image-layer {
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .paroller{
+        margin-left: 12rem;
+
+    }
+}
+
+
+/* FOOTER */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    /* max-width: 100%; */
+    height: auto;
+}
+
+section {
+    padding: 60px 0;
+    padding-top: 344px;
+    /* min-height: 100vh;*/
+}
+
+.footer {
+    background: linear-gradient(105deg, #6e99e6, #093c94);
+    padding-top: 80px;
+    /* margin-top: 2rem; */
+    position: relative; /* Make sure the footer is positioned relative */
+}
+
+.single_footer {
+    margin-bottom: 30px;
+    margin-top: -2rem;
+
+}
+
+.single_footer h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+
+.single_footer p {
+    color: #fff;
+}
+
+.single_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.single_footer ul li {}
+
+.single_footer ul li a {
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.single_footer ul li a:hover {
+    color: #ff3666;
+}
+
+.single_footer_address {}
+
+.single_footer_address ul {}
+
+.single_footer_address ul li {
+    color: #fff;
+}
+
+.single_footer_address ul li span {
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
+
+.contact_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/* START NEWSLETTER CSS */
+.subscribe {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.subscribe__input {
+    background-color: #fff;
+    border: medium none;
+    border-radius: 5px;
+    color: #333;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    height: 60px;
+    letter-spacing: 0.4px;
+    margin: 0;
+    padding: 0 150px 0 20px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .subscribe__input {
+        padding: 0 50px 0 20px;
+    }
+}
+
+.subscribe__btn {
+    background-color: transparent;
+    border-radius: 0 25px 25px 0;
+    color: #01c7e9;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+}
+
+.subscribe__btn i {
+    transition: all 0.3s ease 0s;
+}
+
+@media only screen and (max-width: 768px) {
+    .subscribe__btn {
+        right: 0px;
+    }
+}
+
+.subscribe__btn:hover i {
+    color: #ff3666;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+/* END NEWSLETTER CSS */
+
+/* START SOCIAL PROFILE CSS */
+
+.social_profile ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering the items horizontally */
+    list-style: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+}
+
+.social_profile ul li {
+    /* flex: 1 1 33%;  */
+    /* This makes sure each item takes up one-third of the container */
+    max-width: 33%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.social_profile ul li a {
+    text-align: center;
+    border: 0;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0 5px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 43px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .social_profile ul li a {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .social_profile ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+.social_profile ul li a:hover {
+    background: #ff3666;
+    border: 1px solid #ff3666;
+    color: #fff;
+    border: 0px;
+}
+
+.social_profile ul li a[href*="facebook"]:hover {
+    background-color: #4267B2;
+}
+
+.social_profile ul li a[href*="twitter"]:hover {
+    background-color: #1da1f2;
+}
+
+.social_profile ul li a[href*="whatsapp"]:hover {
+    background-color: #25D366;
+}
+
+.social_profile ul li a[href*="instagram"]:hover {
+    background-color: #bc2a8d;
+}
+
+.social_profile ul li a[href*="youtube"]:hover {
+    background-color: #FF0000;
+}
+
+
+/* END SOCIAL PROFILE CSS */
+
+.copyright {
+    margin-top: 70px;
+    /* padding-top: 40px; */
+    color: #fff;
+    font-size: 12px;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.4); */
+    text-align: center;
+}
+
+.copyright a {
+    color: #01c7e9;
+    transition: all 0.2s ease 0s;
+}
+
+.copyright a:hover {
+    color:#ff3666;
+
+}
+
+/* Footer Social Media Icons */
+
+.social-media {
+    position: absolute;
+    right: 20px; /* Adjust this value as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icon {
+    color: white; /* Icon color */
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Size of the circle */
+    height: 40px; /* Size of the circle */
+    border-radius: 50%; /* Makes the circle */
+    background-color: #4267B2; /* Circle background color */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    color: #fff; /* Icon color on hover */
+}
+
+/* Specific hover styles for each icon */
+.facebook:hover {
+    background-color: #3b5998; /* Facebook color */
+}
+
+.twitter:hover {
+    background-color: #1DA1F2; /* Twitter color */
+}
+
+.instagram:hover {
+    background-color: #E4405F; /* Instagram color */
+}
+
+.whatsapp:hover {
+    background-color: #25D366; /* WhatsApp color */
+}
+
+@media (max-width: 768px) {
+    .social-media {
+        position: static;
+        transform: none;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center; /* Center the icons on smaller screens */
+        flex-direction: row;
+    }
+
+    .social-icon {
+        margin-right: 10px;
+        margin-bottom: 10px
+    }
+}
