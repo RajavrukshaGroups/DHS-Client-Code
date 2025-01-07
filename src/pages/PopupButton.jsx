@@ -195,6 +195,10 @@ function PopupButton() {
             color: "white",
             border: "none",
             width: "100%",
+            display:"flex",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign:"center"
           }}
           onClick={handleSubmit}
         >
