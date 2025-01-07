@@ -77,6 +77,9 @@ function CustomNavbar() {
             <Nav.Item className="nav-item-custom">
               <Nav.Link href="/faq" className="nav-link-custom">FAQ</Nav.Link>
             </Nav.Item>
+            <Nav.Item className="nav-item-custom">
+              <Nav.Link href="/gallery" className="nav-link-custom">Gallery</Nav.Link>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

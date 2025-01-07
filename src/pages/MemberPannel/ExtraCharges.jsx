@@ -17,7 +17,6 @@ const ExtraCharges = () => {
   useEffect(() => {
     const fetchTransferData = async () => {
       const seniorityId = sessionStorage.getItem('seniority_id');
-
       if (!seniorityId) {
         setError('No seniority ID found in session');
         setLoading(false);
@@ -26,7 +25,7 @@ const ExtraCharges = () => {
 
       try {
         // https://memberpanel.defencehousingsociety.com/extracharges
-        const response = await axios.get('http://localhost:5000/extracharges', {
+        const response = await axios.get('https://memberpanel.defencehousingsociety.com/extracharges', {
           params: { seniority_id: seniorityId }
         });
         setTransferData(response.data);
@@ -36,7 +35,6 @@ const ExtraCharges = () => {
         setLoading(false);
       }
     };
-
     fetchTransferData();
   }, []);
 
@@ -60,7 +58,6 @@ const ExtraCharges = () => {
       <div className="eseparator"></div>
       <div className="eseparator"></div>
       <div className="table-responsive">
-
         <table className="extra-table">
           <thead>
             <tr>
@@ -69,7 +66,6 @@ const ExtraCharges = () => {
               <th>Paid Amount</th>
               <th>Cheque/DD/Transaction ID</th>
               <th>Seniority ID</th>
-
               {/* <th>Transfer Date</th> */}
               <th>Reason</th>
             </tr>

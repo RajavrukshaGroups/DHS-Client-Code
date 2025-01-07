@@ -41,6 +41,7 @@ import ContactAdmin from "./pages/MemberPannel/ContactAdmin";
 import PopupAdmin from "./pages/PopupButton";
 import Toast from "./utils/toastify";
 import Error from "./components/404";
+import Gallery from "./components/Gallery/gallery.jsx";
 import {Helmet} from "react-helmet";
 
 function App() {
@@ -79,8 +80,8 @@ function App() {
           <Route path="/view-project-status" element={<ProjectStatus />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/ContactAdmin" element={<ContactAdmin />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/toast" element={<Toast />} />
-
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
@@ -106,6 +107,7 @@ function PopupAdminSelector() {
     "/faq",
     "/online_application",
     "/PrivacyPolicy",
+    
   ];
 
   // Check if current route is in the allowedRoutes list
@@ -144,6 +146,7 @@ function HeaderSelector() {
     "/view-project-status",
     "/reset-password",
     "/ContactAdmin",
+
   ];
 
   const isMemberRoute = memberRoutes.includes(location.pathname);
