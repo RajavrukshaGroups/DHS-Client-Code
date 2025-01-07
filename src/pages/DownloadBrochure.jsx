@@ -160,7 +160,13 @@ const DownloadBrochure = () => {
                 variant="primary"
                 type="submit"
                 className="download-button"
-                style={{ width: "195px" }}
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign: "center",
+                }}
               >
                 Download Now
               </Button>
