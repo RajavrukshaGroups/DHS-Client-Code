@@ -183,7 +183,7 @@ const TapasihalliPage = () => {
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"Work Will
           Be Executed As Per DPA Norms."
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; "Change
-          Of Land Use Process Completed."
+          Of Land Use Process is Completed."
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; "Booking
           are open for phase-2."
         </span>
